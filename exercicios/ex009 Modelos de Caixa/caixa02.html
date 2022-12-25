@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.479);
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(211, 209, 209);
+        }
+
+        aside {
+            background-color: rgb(105, 103, 103);
+            width: 240px;
+            padding: 1px;
+        }
+
+        nav {
+            background-color: gray;
+            box-shadow: 2px 2px 6px black;
+            
+        }
+        nav > a {
+            color: white;
+            padding: 20px;
+        }
+        #menu {
+            color: black;
+        }
+
+        footer {
+            background-color: black;
+        }
+        #rodape {
+            margin: 0;
+            padding: 4px;;
+            color: white;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 id="menu">MENU</h2>
+        <nav>
+            
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor nisi culpa delectus. Modi, suscipit, exercitationem asperiores nisi magnam sint vero ad dignissimos voluptas, excepturi consequuntur eos sequi facere porro.</p>
+                <aside>
+                    <p>Artigo escrito por Lucas Eduardo</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p id="rodape" class="text-center">Desenvolvido por Lucas</p>
+    </footer>
+</body>
+</html>

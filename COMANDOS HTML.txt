@@ -1,0 +1,129 @@
+HTML
+
+<h1> <h2> <h3> <h4> <h5> <h6> hierarquia de títulos
+<hr> Horizontal role - Linha Horizontal
+<p> Parágrafo
+<br> Quebra de linha
+
+&#x(código do emoji); colocar emojis no site https://emojipedia.org
+
+<img> imagens
+
+link:favicon mudar o favicon do site
+Formatão de Texto:
+<strong> Texto em Negrito </strong>
+<em> Texto em Itálico </em>
+<mark> Marcar um texto com Marca Texto </mark>
+<del> Texto deletado ou risco no meio do texto </del>
+<ins> underline embaixo do texto </ins>
+<code> Texto em forma de código </code>
+<pre> Texto com quebra de linhas (pré-formatação) </pre>
+<q> Citação de fala e uma pessoa etc </q>
+<blockquote> Citação Completa </blockquote>
+<abbr> Abreviações </abbr>
+
+Listas:
+Listas Ordenadas: 
+<ol> types(1 A a I i)
+<li>Item da Lista1</li>
+<li>Item da Lista2</li>
+<li>Item da Lista3</li>
+<li>Item da Lista4</li>
+</ol>
+
+Listas não Ordenadas
+<ul> types (disc, circle and square)
+<li>Item da Lista</li>
+<li>Item da Lista</li>
+<li>Item da Lista</li>
+<li>Item da Lista</li>
+</ul>
+
+Listas de Definições
+<dl>
+	<dt>termo</dt>
+	<dd>descrição</dd>
+</dl>
+
+Links:
+Links Externos:
+<a href=“linkquequeroentrar.com.br“ (target“_blank“ rel“external“ para links externos)>Texto do link</a>
+
+Links Interno:
+<a href=“pag2.html“ (rel“next or prev)</a>
+
+Link para download:
+ <a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Link para download do Livro</a>
+
+Imagem Dinâmicas
+
+<picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+</picture>
+
+Reprodução de Audio nos sites
+<audio src="midia/musica-teste.mp3" controls autoplay></audio>
+
+Reprodução de Video
+<video src="midia/meu-Video.m4v" width="300" poster=imagemdecapadovideo.png controls></video>
+
+Inserir video do youtube ou vimeo ou sites de videos:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tCRbVEGHZlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+CSS:
+
+Degradê em CSS
+background-image: linear-gradient(to right, white, blue);
+
+Fontes:
+font: font-style font-weight font-size fonte-family 
+
+Hover: Aparece quando passa o mouse em cima
+after: aparece dps do conteudo
+active: aparece quando é ativado
+
+#id
+.classes
+:pseudo-classes
+::pseudo-element
+> clildren
+
+MODELO DE CAIXA
+height: Altura
+width: Largura
+Border: Borda dentro da caixa
+padding: Espaço dentro da caixa
+margin: Espaço fora da caixa
+outline: borda fora da caixa
+
+Tipos de Caixa:
+box-level: Div
+inline-level: span
+
+
+GROUPING TAGS:
+<header>CABEÇALHO</header>
+<main>Conteúdo</main>
+<footer>Rodapé</footer>
+
+<section> <article> <aside>
+
+GAMBIARRA PARA VIDEO RESPONSIVO:
+div.video {
+    background-color: #063d1e;
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
