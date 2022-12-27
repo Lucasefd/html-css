@@ -36,7 +36,7 @@ header h1 {
 header p {
     color: white;
     margin: 0;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     font-family: var(--fonte1);
 }
 
@@ -55,19 +55,20 @@ main {
 }
 
 main section {
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 main  section  p {
     font-family: var(--fonte3);
-    font-size: 3.5em;
+    font-size: 4.5vw;
     padding: 10px 0px 10px 30px;
 }
 
 section#img1 {
     background-image: url(pacote-d012/imagens/background001.jpg);
     background-position: center center;
+    background-size: cover;
 }
 
 section.imagem {
@@ -78,14 +79,16 @@ section.imagem {
 }
 
 section div.fundo {
-    width: 700px;
-    height: 850px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.521);
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
     }
 
     section#img2 {
         background-image: url(pacote-d012/imagens/background002.jpg);
         background-position: center center;
+        background-size: cover;
     }
 
     footer {
