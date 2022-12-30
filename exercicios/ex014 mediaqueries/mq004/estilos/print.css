@@ -1,3 +1,41 @@
 @charset "UTF-8";
 
 /* Versão Print */
+
+body {
+    background: url(../imagens/back-print.jpg);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    border: 2px solid black;
+}
+
+main::after {
+    content: 'Essa impressão foi realizada pelo site www.cursoemvideo.com';
+}
+
+h1 {
+    text-shadow: none;
+    color: black;
+}
+
+img#mobile {
+    display: none;
+}
+
+img#tablet {
+    display: none;
+}
+
+img#print {
+    display: block;
+}
+
+img#pc {
+    display: none;
+}
+
+img#tv {
+    display: none;
+}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Versão Tablet */
+
+body {
+    background: url(../imagens/back-tablet.jpg) center center;
+}
+
+img#mobile {
+    display: none;
+}
+
+img#tablet {
+    display: block;
+}
+
+img#print {
+    display: none;
+}
+
+img#pc {
+    display: none;
+}
+
+img#tv {
+    display: none;
+}
