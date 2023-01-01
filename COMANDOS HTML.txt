@@ -1,0 +1,288 @@
+HTML
+
+<h1> <h2> <h3> <h4> <h5> <h6> hierarquia de títulos
+<hr> Horizontal role - Linha Horizontal
+<p> Parágrafo
+<br> Quebra de linha
+
+&#x(código do emoji); colocar emojis no site https://emojipedia.org
+
+<img> imagens
+
+link:favicon mudar o favicon do site
+Formatão de Texto:
+<strong> Texto em Negrito </strong>
+<em> Texto em Itálico </em>
+<mark> Marcar um texto com Marca Texto </mark>
+<del> Texto deletado ou risco no meio do texto </del>
+<ins> underline embaixo do texto </ins>
+<code> Texto em forma de código </code>
+<pre> Texto com quebra de linhas (pré-formatação) </pre>
+<q> Citação de fala e uma pessoa etc </q>
+<blockquote> Citação Completa </blockquote>
+<abbr> Abreviações </abbr>
+
+Listas:
+Listas Ordenadas: 
+<ol> types(1 A a I i)
+<li>Item da Lista1</li>
+<li>Item da Lista2</li>
+<li>Item da Lista3</li>
+<li>Item da Lista4</li>
+</ol>
+
+Listas não Ordenadas
+<ul> types (disc, circle and square)
+<li>Item da Lista</li>
+<li>Item da Lista</li>
+<li>Item da Lista</li>
+<li>Item da Lista</li>
+</ul>
+
+Listas de Definições
+<dl>
+	<dt>termo</dt>
+	<dd>descrição</dd>
+</dl>
+
+Links:
+Links Externos:
+<a href=“linkquequeroentrar.com.br“ (target“_blank“ rel“external“ para links externos)>Texto do link</a>
+
+Links Interno:
+<a href=“pag2.html“ (rel“next or prev)</a>
+
+Link para download:
+ <a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Link para download do Livro</a>
+
+Imagem Dinâmicas
+
+<picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+</picture>
+
+Reprodução de Audio nos sites
+<audio src="midia/musica-teste.mp3" controls autoplay></audio>
+
+Reprodução de Video
+<video src="midia/meu-Video.m4v" width="300" poster=imagemdecapadovideo.png controls></video>
+
+Inserir video do youtube ou vimeo ou sites de videos:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tCRbVEGHZlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+CSS:
+
+Degradê em CSS
+background-image: linear-gradient(to right, white, blue);
+
+Fontes:
+font: font-style font-weight font-size fonte-family 
+
+Hover: Aparece quando passa o mouse em cima
+after: aparece dps do conteudo
+active: aparece quando é ativado
+
+#id
+.classes
+:pseudo-classes
+::pseudo-element
+> clildren
+
+MODELO DE CAIXA
+height: Altura
+width: Largura
+Border: Borda dentro da caixa
+padding: Espaço dentro da caixa
+margin: Espaço fora da caixa
+outline: borda fora da caixa
+
+Tipos de Caixa:
+box-level: Div
+inline-level: span
+
+
+GROUPING TAGS:
+<header>CABEÇALHO</header>
+<main>Conteúdo</main>
+<footer>Rodapé</footer>
+
+<section> <article> <aside>
+
+GAMBIARRA PARA VIDEO RESPONSIVO:
+div.video {
+    background-color: #063d1e;
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+BACKGROUND FIXO (imagem de fundo fixa)
+height: 100vh;
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+------------------------------------------------------------------------
+Centralização vertical de items
+https://www.youtube.com/watch?v=-w0Qo_qQiRg&list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ&index=18
+<style>
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            background-color: purple;
+            padding: 10px;
+        }
+
+        #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            background-color: yellow;
+            height: 200px;
+            width: 400px;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
+        }
+</style>
+
+Como criar formulários:
+<form autocomplete="off" method="post">
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+Como desligar o autocomplete do form: <form autocomplete="off">
+
+Formulario com username e senha:
+<form action="cadastro.php" method="post" autocomplete="on"></form>
+    <p>
+        <label for="iusu">Usuário:</label>
+        <input type="text" name="usu" id="iusu" required maxlength="20" placeholder="nome de usuario" autocomplete="username">
+    </p>
+
+    <p>
+        <label for="isen">Senha:</label>
+        <input type="password" name="sen" id="isen" required minlength="8" placeholder="Senha" autocomplete="current-password">
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+    </p>
+
+Form mais Complexo:
+<form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30"
+            placeholder="Nome Completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.1">
+        </p>
+        <p>
+            <label for="imes">Mês</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+    </form>
+
+Formulario Check Box e Radio:
+(name= do radio tem q ser iguais para marcar um só)
+
+<form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas"> <label for="isxmas" value="M">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem"> <label for="isxfem" value="F">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>  <br>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol">Vôlei</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+Formulários com Select, Datalist e textarea:
+<p>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest">
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="adm">Administrador</option>
+                <option value="Con">Contabilidade</option>
+                <option value="Dev">Desenvolvedor</option>
+                <option value="Prof">Professor</option>
+            </datalist>
+        <P>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </P>
+
+        <p>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+    </form>
+
+--------------------------------------------------------------------------
+
+Media Queries: para impressora
+<link rel="stylesheet" href="estilos/tela.css" media="screen">
+<link rel="stylesheet" href="estilos/impressora.css" media="print">
+
+Media Features: Para celular em modo retrato e paisagem
+<link rel="stylesheet" href="estilos/style.css" media="all">
+<link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
+<link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
+
+
+--------------------------------------------------------------------------
+
+Sobrepondo Elementos:
+z-index:0 ou 1 sendo o maior para o elemento q vai ficar a cima
